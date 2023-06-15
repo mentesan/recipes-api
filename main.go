@@ -109,7 +109,6 @@ func SearchRecipeHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, listOfRecipes)
 }
 
-
 func main() {
 	router := gin.Default()
 	router.POST("/recipes", NewRecipeHandler)
