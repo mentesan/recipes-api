@@ -6,7 +6,6 @@ import (
 	"net/http"
 	"strings"
 	"time"
-
 	"github.com/gin-gonic/gin"
 	"github.com/rs/xid"
 )
@@ -109,6 +108,7 @@ func SearchRecipeHandler(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, listOfRecipes)
 }
+
 
 func main() {
 	router := gin.Default()
